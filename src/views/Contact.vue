@@ -63,54 +63,64 @@
     </div>
   </div>
 </template>
-
-<script>
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
 import emailjs from 'emailjs-com';
 
-export default {
-  name: 'ContactView',
-  data() {
-    return {
-      from_name: '', 
-      email: '', 
-      message: '', 
-    };
-  },
-  methods: {
-    validateAndSend() {
+
+export default defineComponent({
+  name: 'Contact',
+  setup() {
+    // Définir les variables réactives
+    const from_name = ref('');
+    const email = ref('');
+    const message = ref('');
+
+    // Méthodes
+    const validateAndSend = () => {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!this.from_name || !this.email || !this.message) {
+      if (!from_name.value || !email.value || !message.value) {
         alert('Veuillez remplir tous les champs avant de soumettre.');
         return;
       }
-      if (!emailRegex.test(this.email)) {
+      if (!emailRegex.test(email.value)) {
         alert('Veuillez entrer une adresse email valide.');
         return;
       }
 
-      const form = this.$refs.contactForm;
+      // Référence au formulaire
+      const form = document.querySelector('form');
 
+      // Envoyer via EmailJS
       emailjs
         .sendForm(
-          'service_mzecu34',
-          'template_hy2rvka',
-          form,
-          '4Gzf3XoiSbXEKjyF-'
+          'service_mzecu34', // ID du service
+          'template_hy2rvka', // ID du template
+          form!,
+          '4Gzf3XoiSbXEKjyF-' // Clé publique
         )
-        .then((result) => {
+        .then(() => {
           alert('SUCCESS! Votre message a été envoyé.');
-          this.resetForm();
+          resetForm();
         })
         .catch((error) => {
           console.error('Erreur lors de l\'envoi:', error);
-          alert('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.');
+          alert('Une erreur est survenue. Veuillez réessayer.');
         });
-    },
-    resetForm() {
-      this.from_name = '';
-      this.email = '';
-      this.message = '';
-    },
+    };
+
+    const resetForm = () => {
+      from_name.value = '';
+      email.value = '';
+      message.value = '';
+    };
+
+    return {
+      from_name,
+      email,
+      message,
+      validateAndSend,
+    };
   },
-};
+});
 </script>

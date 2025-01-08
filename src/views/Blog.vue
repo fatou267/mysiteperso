@@ -48,9 +48,7 @@
 </template>
 
 <script setup lang="ts">
-// Aucune logique avancée nécessaire ici.
 </script>
 
 <style>
-/* Ajoutez des styles spécifiques si nécessaire */
 </style>
