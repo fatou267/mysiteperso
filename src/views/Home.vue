@@ -62,8 +62,8 @@
       <div class="bg-white rounded-lg shadow-md overflow-hidden">
         <img src="../assets/toeic.png" alt="Site TOEIC" class="w-full h-48 object-cover">
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Site d'Entrainement pour les Tests TOEIC</h3>
-          <p class="text-gray-600 mb-4">Un site interactif pour s'entraîner aux tests TOEIC, développé avec React.js.</p>
+          <h3 class="text-xl font-semibold mb-2">Site de Prise de Rendez-Vous Consulaire</h3>
+          <p class="text-gray-600 mb-4">Système de Rendez-vous du Consulat du Sénégal, développé avec React.js et Supabase.</p>
           <a href="#" class="text-primary hover:text-secondary">Voir plus →</a>
         </div>
       </div>
