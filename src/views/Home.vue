@@ -32,6 +32,14 @@
         </div>
       </div>
       <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="../assets/rdv.png" alt="Site TOEIC" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Site de Prise de Rendez-Vous Consulaire</h3>
+          <p class="text-gray-600 mb-4">Système de Rendez-vous du Consulat du Sénégal, développé avec React.js et Supabase.</p>
+          <a href="https://github.com/fatou267/rendez_vous" class="text-primary hover:text-secondary">Voir plus →</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
         <img src="../assets/logo.png" alt="Blog en Django" class="w-full h-48 object-cover">
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Site culinaire</h3>
@@ -59,14 +67,7 @@
         </div>
       </div>
       <!-- Projet 4 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="../assets/toeic.png" alt="Site TOEIC" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Site de Prise de Rendez-Vous Consulaire</h3>
-          <p class="text-gray-600 mb-4">Système de Rendez-vous du Consulat du Sénégal, développé avec React.js et Supabase.</p>
-          <a href="https://github.com/fatou267/rendez_vous" class="text-primary hover:text-secondary">Voir plus →</a>
-        </div>
-      </div>
+      
       <!-- Projet 2 -->
       <div class="bg-white rounded-lg shadow-md overflow-hidden">
         <img src="../assets/appsenbio.png" alt="Application mobile Sen Bio" class="w-full h-48 object-cover">
