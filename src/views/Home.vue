@@ -64,7 +64,7 @@
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Site de Prise de Rendez-Vous Consulaire</h3>
           <p class="text-gray-600 mb-4">Système de Rendez-vous du Consulat du Sénégal, développé avec React.js et Supabase.</p>
-          <a href="#" class="text-primary hover:text-secondary">Voir plus →</a>
+          <a href="https://github.com/fatou267/rendez_vous" class="text-primary hover:text-secondary">Voir plus →</a>
         </div>
       </div>
       <!-- Projet 2 -->
